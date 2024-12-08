@@ -1,5 +1,3 @@
-import 'reveal.js/dist/reveal.css'
-import 'reveal.js/dist/theme/night.css'
 import Notes from 'reveal.js/plugin/notes/notes.esm'
 import './styles.css'
 import Reveal from 'reveal.js'

@@ -1,3 +1,6 @@
+@import url('reveal.js/dist/reveal.css');
+@import url('reveal.js/dist/theme/night.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
