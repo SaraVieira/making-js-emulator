@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'silkscreennormal';
+  src: url('fonts/silkscreen_normal_macroman/slkscr-webfont.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -10px;
+  }
+}
+
+#reveal {
+  @apply text-center;
+  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: cover;
+  background-size: 100% 1px !important;
+  animation: scanlines infinite 55s linear;
+  color: #00ff00;
+  filter: blur(0.8px);
+  text-shadow: 0 0 10px #00ff00 !important;
+  font-family: 'silkscreennormal';
+
+  img {
+    box-shadow: 0 0 10px #00ff00 !important;
+    filter: blur(0.8px);
+  }
+
+  a {
+    @apply text-yellow-400;
+  }
+
+  h1 {
+    font-family: 'silkscreennormal';
+  }
+  .slide-number {
+    @apply bg-transparent z-[1] text-lg;
+    font-family: 'silkscreennormal';
+    text-shadow: none !important;
+  }
+}
