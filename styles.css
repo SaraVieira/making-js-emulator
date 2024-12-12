@@ -15,9 +15,14 @@
   Current colors taken from GitHub's CSS
 */
 
+.reveal-viewport,
+#reveal {
+  background: black !important;
+}
+
 .hljs {
   color: #c9d1d9;
-  background: #0d1117;
+  text-shadow: none;
 }
 
 .hljs-doctag,
@@ -165,6 +170,9 @@
     @apply text-yellow-400;
   }
 
+  .progress {
+    @apply !hidden;
+  }
   h1 {
     font-family: 'silkscreennormal';
   }
