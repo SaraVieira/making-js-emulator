@@ -102,9 +102,97 @@
             <li>Monochrome</li>
           </ul>
         </section>
-        <section>
+        <section data-auto-animate>
           <pre class="!shadow-none">
-            <code  class="!bg-transparent javascript" data-trim data-noescape>
+            <code  class="!bg-transparent javascript" data-trim data-noescape data-line-numbers="1-2">
+              export class Screen {
+                constructor(scale, canvas) {
+                  this.display = new Array(32 * 64).fill(0);
+                  this.scale = scale;
+              
+                  this.canvas = canvas;
+                  this.ctx = this.canvas.getContext('2d');
+                  this.colors = {
+                    fill: '#000',
+                    bg: 'white',
+                  };
+              
+                  this.canvas.width = COLS * this.scale;
+                  this.canvas.height = ROWS * this.scale;
+                }
+              }              
+              </code>
+            </pre>
+        </section>
+        <section data-auto-animate>
+          <pre class="!shadow-none">
+            <code  class="!bg-transparent javascript" data-trim data-noescape data-line-numbers="1-3">
+              export class Screen {
+                constructor(scale, canvas) {
+                  this.display = new Array(32 * 64).fill(0);
+                  this.scale = scale;
+              
+                  this.canvas = canvas;
+                  this.ctx = this.canvas.getContext('2d');
+                  this.colors = {
+                    fill: '#000',
+                    bg: 'white',
+                  };
+              
+                  this.canvas.width = COLS * this.scale;
+                  this.canvas.height = ROWS * this.scale;
+                }
+              }              
+              </code>
+            </pre>
+        </section>
+        <section data-auto-animate>
+          <pre class="!shadow-none">
+            <code  class="!bg-transparent javascript" data-trim data-noescape data-line-numbers="1-7">
+              export class Screen {
+                constructor(scale, canvas) {
+                  this.display = new Array(32 * 64).fill(0);
+                  this.scale = scale;
+              
+                  this.canvas = canvas;
+                  this.ctx = this.canvas.getContext('2d');
+                  this.colors = {
+                    fill: '#000',
+                    bg: 'white',
+                  };
+              
+                  this.canvas.width = COLS * this.scale;
+                  this.canvas.height = ROWS * this.scale;
+                }
+              }              
+              </code>
+            </pre>
+        </section>
+        <section data-auto-animate>
+          <pre class="!shadow-none">
+            <code  class="!bg-transparent javascript" data-trim data-noescape data-line-numbers="1-11">
+              export class Screen {
+                constructor(scale, canvas) {
+                  this.display = new Array(32 * 64).fill(0);
+                  this.scale = scale;
+              
+                  this.canvas = canvas;
+                  this.ctx = this.canvas.getContext('2d');
+                  this.colors = {
+                    fill: '#000',
+                    bg: 'white',
+                  };
+              
+                  this.canvas.width = COLS * this.scale;
+                  this.canvas.height = ROWS * this.scale;
+                }
+              }              
+              </code>
+            </pre>
+        </section>
+        <section data-auto-animate>
+          <pre class="!shadow-none">
+            <code  class="!bg-transparent javascript" data-trim data-noescape data-line-numbers="1-16">
               export class Screen {
                 constructor(scale, canvas) {
                   this.display = new Array(32 * 64).fill(0);
@@ -132,6 +220,12 @@
             <li>4096 Memory locations of 8Bits each</li>
             <li>16 8bit data registers</li>
           </ul>
+        </section>
+        <section>
+          <img
+            src="/game.png"
+            class="!filter-none !m-auto block !max-h-[80vh] w-auto"
+          />
         </section>
         <section>
           <pre class="!shadow-none !overflow-visible">
@@ -170,16 +264,39 @@
             <div class="mx-auto text-center justify-center">
               <span class="text-white">Hexadecmal notation</span>
             </div>
+            <div class="fragment">
+              <p>Decimal: 0-9</p>
+              <p>Hexadecimal: 0-F</p>
+            </div>
           </span>
         </section>
-        <section data-auto-animate>
-          <span class="text-center">
-            <div class="!text-6xl mx-auto text-center">
-              <span class="text-white">Hexadecmal notation</span>
-            </div>
-            <p>Decimal: 0-9</p>
-            <p>Hexadecimal: 0-F</p>
-          </span>
+        <section>
+          <div class="mx-auto text-center justify-center">
+            <span class="text-white">Hex colors</span>
+
+            <p class="fragment">#FFFFFF</p>
+            <p class="fragment">FF FF FF</p>
+            <p class="fragment flex flex-col gap-2 w-full">
+              <span class="pt-4">
+                (15<sup>16<sup>1</sup></sup
+                >) + (15<sup>16<sup>0</sup></sup
+                >)<br
+              /></span>
+            </p>
+            <p class="fragment flex flex-col gap-2 w-full">
+              <span class="pt-4"> (15 * 16) + (15 * 1)<br /></span>
+            </p>
+            <p class="fragment flex flex-col gap-2 w-full">
+              <span class="pt-4"> 255 </span>
+            </p>
+            <p class="fragment flex flex-col gap-2 w-full">
+              <span class="pt-4"> 255 255 255 </span>
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="bg-white w-[300px] h-[300px] !mx-auto !mb-4"></div>
+          <code>rgb(255, 255, 255)</code>
         </section>
       </div>
     </div>
