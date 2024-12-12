@@ -181,4 +181,18 @@
     font-family: 'silkscreennormal';
     text-shadow: none !important;
   }
+
+  .auto-scroll {
+    overflow: visible;
+    position: absolute;
+    animation: scroll 20s linear;
+  }
+}
+@keyframes scroll {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -5240px;
+  }
 }
