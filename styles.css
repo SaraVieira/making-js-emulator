@@ -158,12 +158,12 @@
   background-size: 100% 1px !important;
   animation: scanlines infinite 55s linear;
   color: #00ff00;
-  filter: blur(0.8px);
   text-shadow: 0 0 10px #00ff00 !important;
   font-family: 'silkscreennormal';
 
   img {
     filter: drop-shadow(0 0 10px #00ff00);
+    image-rendering: pixelated;
   }
 
   a {
