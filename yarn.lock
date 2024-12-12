@@ -92,6 +92,11 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
@@ -762,10 +767,22 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
+reveal.js-appearance@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/reveal.js-appearance/-/reveal.js-appearance-1.3.4.tgz#28d3930270bb06914b8a6507d20815931d34bec1"
+  integrity sha512-bvvXfri08zfIdc5H08fiHcLVYfrVV6Mgfh7v8NttR2wXMZnE6nNJ8fHm8DfslOpqBocdmvkFrzhpqL7l3tx/rg==
+  dependencies:
+    reveal.js "^5.0.4"
+
 reveal.js@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/reveal.js/-/reveal.js-4.1.0.tgz#db87a754b03810584114e902b2702e96ee1ca63c"
   integrity sha512-lYOMhxSWgq5jtgspF7eRL0d2rBnHO/VGZ4/qp46yu+eGoWqJkYHEuepEXzx71M8MI6Rf8HBYWaTnKi5uHWcU1Q==
+
+reveal.js@^5.0.4:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/reveal.js/-/reveal.js-5.1.0.tgz#dfaa4631127e739aa8ebbaa425d653e72d799e66"
+  integrity sha512-KDt7m0+xwKV6nAZt4CNPVFBf42sTKRQapg0bGGKB5PKO5XvChnMfwlZkybydHiQJ7p5+6LbHKRGrhXODdoNIaA==
 
 "rollup@>=2.59.0 <2.78.0":
   version "2.77.3"
