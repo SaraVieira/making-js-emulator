@@ -23,6 +23,7 @@
 .hljs {
   color: #c9d1d9;
   text-shadow: none;
+  font-family: 'MonoLisa' !important;
 }
 
 .hljs-doctag,
@@ -186,6 +187,10 @@
     overflow: visible;
     position: absolute;
     animation: scroll 20s linear;
+  }
+
+  .font-mono {
+    font-family: 'MonoLisa';
   }
 }
 @keyframes scroll {
