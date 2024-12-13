@@ -15,7 +15,7 @@ export const Intro = () => (
       </h1>
     </section>
     <section data-auto-animate>
-      <h1 className="!text-8xl animate__tada" data-delay="0">
+      <h1 className="!text-8xl">
         Building an emulator in
         <span className="text-yellow-400"> JavaScript</span>
       </h1>
