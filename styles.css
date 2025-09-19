@@ -189,7 +189,7 @@
   .auto-scroll {
     overflow: visible;
     position: absolute;
-    animation: scroll 20s linear;
+    animation: scroll 10s linear;
   }
 
   .font-mono {

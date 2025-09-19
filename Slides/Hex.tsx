@@ -18,38 +18,98 @@ export const Hex = () => {
         <div className="mx-auto text-center justify-center">
           <span className="text-white">Hex colors</span>
 
-          <p className="fragment">#FFFFFF</p>
-          <p className="fragment">FF FF FF</p>
+          <p className="fragment">#BADA55</p>
+          <p className="fragment">BA DA 55</p>
           <p className="fragment">
-            F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="text-yellow-400">F</span>
+            B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="text-yellow-400">A</span>
           </p>
           <p className="fragment flex flex-col gap-2 w-full">
             <span className="pt-4">
-              (15*16<sup>1</sup>) +
+              (11*16<sup>1</sup>) +
               <span className="text-yellow-400">
-                (15*16<sup>0</sup>)<br />
+                (10*16<sup>0</sup>)<br />
               </span>
             </span>
           </p>
           <p className="fragment flex flex-col gap-2 w-full">
             <span className="pt-4">
               {' '}
-              (15 * 16) + (15 * 1)
+              (11 * 16) + (10 * 1)
               <br />
             </span>
           </p>
           <p className="fragment flex flex-col gap-2 w-full">
-            <span className="pt-4"> 255 </span>
-          </p>
-          <p className="fragment flex flex-col gap-2 w-full">
-            <span className="pt-4"> 255 255 255 </span>
+            <span className="pt-4"> 186 </span>
           </p>
         </div>
       </section>
       <section>
-        <div className="bg-white w-[300px] h-[300px] !mx-auto !mb-4"></div>
-        <span>rgb(255, 255, 255)</span>
+        <div className="mx-auto text-center justify-center">
+          <span className="text-white">Hex colors</span>
+
+          <p className="fragment">#BADA55</p>
+          <p className="fragment">(186) DA 55</p>
+          <p className="fragment">
+            D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="text-yellow-400">A</span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4">
+              (13*16<sup>1</sup>) +
+              <span className="text-yellow-400">
+                (10*16<sup>0</sup>)<br />
+              </span>
+            </span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4">
+              {' '}
+              (13 * 16) + (10 * 1)
+              <br />
+            </span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4"> 218 </span>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div className="mx-auto text-center justify-center">
+          <span className="text-white">Hex colors</span>
+
+          <p className="fragment">#BADA55</p>
+          <p className="fragment">(186) (218) 55</p>
+          <p className="fragment">
+            5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="text-yellow-400">5</span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4">
+              (5*16<sup>1</sup>) +
+              <span className="text-yellow-400">
+                (5*16<sup>0</sup>)<br />
+              </span>
+            </span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4">
+              {' '}
+              (5 * 16) + (5 * 1)
+              <br />
+            </span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4"> 85 </span>
+          </p>
+          <p className="fragment flex flex-col gap-2 w-full">
+            <span className="pt-4"> 186 218 85 </span>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div className="bg-[#BADA55] w-[300px] h-[300px] !mx-auto !mb-4"></div>
+        <span>rgb(186, 218, 85)</span>
       </section>
     </>
   )
