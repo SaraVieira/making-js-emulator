@@ -16,6 +16,18 @@ const code = `export className Screen {
     }
 }`
 
+const showOnScreenCode = `
+// x and y are the coordinates of the pixel to set
+setPixel(x: number, y: number) {
+  const pixelLoc = x + y * COLS;
+
+  // CHIP-8 uses XOR drawing: if the pixel is already on, it turns off.
+  this.display[pixelLoc] ^= 1;
+
+  return !this.display[pixelLoc];
+}
+`
+
 export const Screen = () => {
   return (
     <>
@@ -85,6 +97,35 @@ export const Screen = () => {
             data-line-numbers="1-16"
           >
             {code}
+          </code>
+        </pre>
+      </section>
+      <section>
+        <div className="mx-auto text-center justify-center">
+          <span className="text-white">Actually showing pixels</span>
+        </div>
+      </section>
+      <section data-auto-animate>
+        <pre className="!shadow-none">
+          <code
+            className="!bg-transparent javascript"
+            data-trim
+            data-noescape
+            data-line-numbers="1-3"
+          >
+            {showOnScreenCode}
+          </code>
+        </pre>
+      </section>
+      <section data-auto-animate>
+        <pre className="!shadow -none">
+          <code
+            className="!bg-transparent javascript"
+            data-trim
+            data-noescape
+            data-line-numbers="1-11"
+          >
+            {showOnScreenCode}
           </code>
         </pre>
       </section>

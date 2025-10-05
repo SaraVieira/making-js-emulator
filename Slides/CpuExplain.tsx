@@ -46,14 +46,6 @@ export const CPUExplain = () => {
           </code>
         </pre>
       </section>
-      <section>
-        <span className="!text-3xl text-center">
-          <div className="flex gap-20 mx-auto justify-between">
-            <span>Hexadecimal notation</span>
-            <span>Bitwise operations</span>
-          </div>
-        </span>
-      </section>
     </>
   )
 }

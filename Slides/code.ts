@@ -1,16 +1,45 @@
-export const smallSwitch = `switch (opcode & 0xf000) {
-    // 0x42f3 & 0xf000 -> 0x4000
-    case 0x0000:
-        switch (opcode) {
-        case 0x00e0:
-            this.renderer.clear();
+export const smallSwitch = `
+  // example 0xffff
+  executeInstruction(instruction: number) {
+    // Increment program counter by 2 bytes (each instruction is 16-bit)
+    this.pc += 2;
+    // Extract register identifiers from instruction
+    // X register: bits 8-11 (second nibble)
+    const x = (opcode & 0x0f00) >> 8;
+    switch (opcode & 0xf000) {
+        switch (opcode & 0xff) {
+          case 0x9e: 
+            if (this.keyboard.isKeyPressed(this.registers8[x])) {
+              this.pc += 2;
+            }
             break;
-        case 0x00ee:
-            this.pc = this.stack.pop()!;
+          case 0xa1:
+            if (!this.keyboard.isKeyPressed(this.registers8[x])) {
+              this.pc += 2;
+            }
+            break;
+          }
+      break;
+  `
+
+export const second = `
+    const x = (opcode & 0x0f00) >> 8;
+    ...
+    case 0x18: // LD ST, Vx - Set sound timer = Vx
+            this.soundTimer = this.registers8[x];
+            break;
+`
+
+export const third = `
+    switch (opcode & 0xf000) {
+      case 0x0000:
+        switch (opcode) {
+          case 0x00e0: // CLS - Clear display
+            this.renderer.clear();
             break;
         }
         break;
-}`
+`
 
 export const fullSwitch = `
 switch (opcode & 0xf000) {

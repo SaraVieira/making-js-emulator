@@ -4,16 +4,16 @@ import RevealHighlight from 'reveal.js/plugin/highlight/highlight.esm'
 import Appearance from 'reveal.js-appearance/plugin/appearance/appearance.js'
 import Reveal from 'reveal.js'
 
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { Intro } from './Slides/Intro'
 import { EmuExplain } from './Slides/EmuExplain'
 import { Chip8 } from './Slides/Chip8'
 import { Screen } from './Slides/Screen'
 import { CPUExplain } from './Slides/CpuExplain'
 import { Hex } from './Slides/Hex'
-import { Bitwise } from './Slides/Bitwise'
 import { Switch } from './Slides/Switch'
 import { Outro } from './Slides/Outro'
+import { Sound } from './Slides/Sound'
 
 const Slides = () => {
   const deckDivRef = useRef<HTMLDivElement>(null)
@@ -55,9 +55,9 @@ const Slides = () => {
         <EmuExplain />
         <Chip8 />
         <Screen />
+        <Sound />
         <CPUExplain />
         <Hex />
-        <Bitwise />
         <Switch />
         <Outro />
       </div>

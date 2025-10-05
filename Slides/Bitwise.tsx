@@ -11,6 +11,20 @@ export const Bitwise = () => {
           <p className="fragment font-mono">^ {'->'} 0x11 ^ 0x10 = 0x1</p>
         </div>
       </section>
+      <section>
+        <div className="mx-auto text-center justify-center">
+          <span className="text-white">Bitwise operators</span>
+          <p className="fragment font-mono">
+            & {'->'} 0xffff & 0xf000 = 0xf000
+          </p>
+          <p className="fragment font-mono">
+            | {'->'} 0xffff | 0xf000 = 0xffff
+          </p>
+          <p className="fragment font-mono">
+            ^ {'->'} 0xffff ^ 0xf000 = 0x0fff
+          </p>
+        </div>
+      </section>
     </>
   )
 }

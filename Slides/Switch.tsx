@@ -1,5 +1,6 @@
 import React from 'react'
-import { fullSwitch, smallSwitch } from './code'
+import { fullSwitch, smallSwitch, second, third } from './code'
+import { Bitwise } from './Bitwise'
 
 export const Switch = () => {
   return (
@@ -9,6 +10,12 @@ export const Switch = () => {
           <span className="text-white">So, we have instructions</span>
           <span className="fragment">What next?</span>
         </div>
+      </section>
+      <section>
+        <iframe
+          className="w-full h-[600px]"
+          src="https://en.wikipedia.org/wiki/CHIP-8#Opcode_table"
+        />
       </section>
       <section>
         <div className="mx-auto flex-col flex text-center justify-center">
@@ -46,9 +53,46 @@ export const Switch = () => {
             className="!bg-transparent javascript"
             data-trim
             data-noescape
-            data-line-numbers="1-10"
+            data-line-numbers="1-20"
           >
             {smallSwitch}
+          </code>
+        </pre>
+      </section>
+      <Bitwise />
+      <section data-auto-animate>
+        <pre className="!shadow-none">
+          <code
+            className="!bg-transparent javascript"
+            data-trim
+            data-noescape
+            data-line-numbers="1-30"
+          >
+            {smallSwitch}
+          </code>
+        </pre>
+      </section>
+      <section data-auto-animate>
+        <pre className="!shadow-none">
+          <code
+            className="!bg-transparent javascript"
+            data-trim
+            data-noescape
+            data-line-numbers="1-30"
+          >
+            {second}
+          </code>
+        </pre>
+      </section>
+      <section data-auto-animate>
+        <pre className="!shadow-none">
+          <code
+            className="!bg-transparent javascript"
+            data-trim
+            data-noescape
+            data-line-numbers="1-30"
+          >
+            {third}
           </code>
         </pre>
       </section>
