@@ -26,7 +26,7 @@
 .hljs {
   color: #c9d1d9;
   text-shadow: none;
-  font-family: 'MonoLisa' !important;
+  font-family: 'MonoLisa', monospace !important;
 }
 
 .hljs-doctag,
